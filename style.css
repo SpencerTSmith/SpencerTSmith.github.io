@@ -8,14 +8,16 @@
     src: url("media/Akzidenz-grotesk-black.ttf");
 }
 
-body {
-    margin: 40px auto;
+html {
     background-image: url('media/background.gif');
     background-repeat: repeat;
     background-size: auto;
     background-position: center;
-    background-attachment: fixed;
-    max-width: 900px;
+}
+
+body {
+    margin: 40px auto;
+    max-width: 750px;
 }
 h1, h2, h3 {
    font-family: "diablo", sans-serif;
