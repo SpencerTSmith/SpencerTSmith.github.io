@@ -147,3 +147,13 @@ footer{
     height: 31px;
     width: 88px;
 }
+.scroll-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #1C1B19;
+    color: #FBB829;
+    border: 1px solid #EF2F27;
+    display: flex;
+    overflow: hidden;
+    font-family: Bitstream Vera Sans Mono, monospace;
+}
