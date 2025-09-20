@@ -74,5 +74,18 @@
       <a href="mailto:spencertsmith2003&#64;gmail.com"><img src="media/email.gif" alt="Email!" class="button"/>
 		</footer>
 	</div>
+  <audio id="bg-music" loop playsinline>
+    <source src="media/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    const audio = document.getElementById('bg-music');
+    audio.volume = 0.2;
+
+    audio.play().catch(() => {
+      const resume = () => { audio.play().catch(()=>{}); document.removeEventListener('click', resume); };
+      document.addEventListener('click', resume, { once: true });
+    });
+  </script>
 	</body>
 </html>
