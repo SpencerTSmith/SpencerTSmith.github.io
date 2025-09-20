@@ -1,147 +1,145 @@
 @font-face {
-    font-family: Akzidenz-Grotesk;
-    src: url(./media/Akzidenz-grotesk-black.ttf)
+    font-family: "diablo";
+    src: url("media/Diablo_Light.ttf");
 }
+
 @font-face {
-    font-family: Gregorian;
-    src: url(./media//GregorianFLF.ttf);
+    font-family: "Akzidenz-Grotesk";
+    src: url("media/Akzidenz-grotesk-black.ttf");
 }
 
-.header {
-    font-family: Gregorian;
-    font-size: xx-large;
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 115, 0);
-    justify-content: center;
+body {
+    margin: 40px auto;
+    background-image: url('media/background.gif');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 750px;
 }
-
-html, body {
-    width: 100%;
-    height: 100%;
-    cursor: url(./media/goblin_cursor2.png), auto;
-    background-color: black;
+h1, h2, h3, h4, h5, h6 {
+   font-family: "diablo", sans-serif;
 }
-
-body:active {
-    cursor: url(./media/goblin_cursor3.png), auto;
+img.header{
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-.main-content {
-    font-family: Akzidenz-Grotesk;
-    flex: 1;  /* This allows the content to expand and push the footer down */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-}
-
-.background {
-    position: absolute;
-    width: 100%;
-    height: 150rem;
-    background-image: url(./media/mushroom_cloud.gif);
-    background-color: rgb(12, 0, 0);
-}
-
-.bounce {
-    height: 150rem;
-}
-
-.container {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px
-}
-.game-description {
-    max-width: 30vh;
-    padding: 1vw;
-}
-
-.container video {
-    max-width: 100vh; /* Adjust the max-width as needed */
-}
-
-.download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    max-width: 500px;
-    max-height: 100px;
-    background-color: rgb(255, 0, 0);
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 3px solid black;
-    cursor: url(./media/goblin_cursor2.png), auto;
-}
-
-.download-button:hover {
-    cursor: url(./media/goblin_cursor1.png), auto;
-}
-
-.download-button:active {
-    cursor: url(./media/goblin_cursor3.png), auto;
-}
-
-
-.footer {
-    font-family:  Gregorian;
-    font-size: xx-large;
-    width: 100%;
+h3.subtitle{
     text-align: center;
-    background-color: rgb(0, 0, 0);
-    cursor: url(./media/goblin_cursor2.png);
+    color: #EF2F27;
+    margin-top: 0px;
+}
+nav b{
+    color: #EF2F27;
+    font-size: 18px;
+}
+header{
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+    border: 1px solid #EF2F27;
+    background-color: #1C1B19;
+}
+div.nav{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #EF2F27;
+    background-color: #1C1B19;
+    font-family: "diablo", monospace;
+}
+nav.nav{
+    padding:5px;
+}
+nav a{
+    color: #EF2F27;
+    font-size: 18px;
+}
+div.main a{
+    color: #EF2F27;
+}
+div.main{
+    border: 1px solid #EF2F27;
+    color: #EF2F27;
+    background-color: #1C1B19;
+    overflow:auto;
+    position: relative;
+    font-family: Bitstream Vera Sans Mono, monospace;
+}
+div.centered{
+	margin: 5px;
+	text-align:center;
+}
+img.album{
+    width:330px;
+    height:200px;
+    object-position: top;
+    object-fit:cover;
+}
+div.left{
+    float: left;
+    border-right: 1px solid #EF2F27;
+    border-top: 1px solid #EF2F27;
+    width: 373px;
+    text-align: left;
+}
+div.right{
+    float: right;
+    border-left: 1px solid #EF2F27;
+    border-top: 1px solid #EF2F27;
+    width: 373px;
+    text-align: left;
+}
+table.album{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.footer:active {
-    cursor: url(./media/goblin_cursor3.png);
+table.exif{
+    margin-left: auto;
+    margin-right: auto;
+}
+div.albummain{
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+div.footer{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #1C1B19;
 }
 
-a {
-    color: rgb(255, 0, 0);
-    cursor: url(./media/goblin_cursor2.png), auto;
+div.section{
+	text-align: center;
+}
+div.article{
+	margin: 10px;
+}
+div.article div.imgparent{
+	margin:auto;
+	text-align: center;
+}
+div.article img{
+	vertical-align: middle;
+	display: inline-block;
 }
 
-a:hover{
-    cursor: url(./media/goblin_cursor1.png), auto;
+table, tr, td, th{
+    border: 1px solid #EF2F27;
 }
-
-a:active {
-    cursor: url(./media/goblin_cursor3.png), auto;
+footer{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #EF2F27;
+    text-align: center;
+    padding: 5px;
 }
-
-a:visited {
-    color:rgb(255, 115, 0);
-}
-
-.scroll-text {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 196, 0);
-    width: 50%;
-    border: 2px solid rgb(255, 255, 255);
-    display: flex;
-    border-radius: 1px;
-    overflow: hidden;
-}
-
-li.cool-item {
-    animation: color-change 1s infinite;
-}
-
-@keyframes color-change {
-    0% { color: red; }
-    50% { color: yellow; }
-    100% { color: red; }
-}
-
-span.red-text {
-    color: red;
+.button{
+    height: 31px;
+    width: 88px;
 }
